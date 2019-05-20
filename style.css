@@ -1,0 +1,184 @@
+@font-face{
+    font-family: "Intro";
+    src: url("./fonts/intro/Intro.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "PlayFair";
+    src: url("./fonts/playfair-display/PlayfairDisplay-Regular.ttf") format("truetype");    
+}
+
+@font-face{
+    font-family: "IntroRust";
+    src: url("./fonts/intro-rust-g/IntroRustG-Base2Line.otf") format("opentype");
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: 0.1px solid rgba(140,136,132);
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.1vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.3vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.5vw;
+    }
+}
+
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: 0.1px solid rgba(140,136,132);
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.2vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.5vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.7vw;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.4vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.6vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.9vw;
+    }
+}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar-brand{
+        width: 20vw;
+        position: relative;
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.2vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.4vw;
+    }
+} 
+
+/* Extralarge devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: none;
+        height: 5rem;
+    }
+
+    #navbarSupportedContent{
+        border-bottom: 0.1px solid rgba(140,136,132)
+    }
+
+    .navbar-brand{
+        width: 20vw;
+        position: relative;
+        bottom: -2.5rem;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.3vw;
+    }
+} 
+
+#title{
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#header{
+    font-family: "Intro";
+}
+
+.nav-link{
+    padding: 1.7rem 0;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: rgba(234,185,106,255) !important;
+    border-bottom: 2px solid rgba(234,185,106,255);
+}
+
+.element{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-top: 2.3rem;
+}
+
+.display-grid{
+    display: grid !important;
+}
+
+.playFair{
+    font-family: "PlayFair";
+}
+
+.introRust{
+    font-family: "IntroRust";
+}
+
+.highlight{
+    color: rgba(234,185,106,255);
+}
