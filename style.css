@@ -1,0 +1,266 @@
+@font-face{
+    font-family: "Intro";
+    src: url("./fonts/intro/Intro.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "PlayFair";
+    src: url("./fonts/playfair-display/PlayfairDisplay-Regular.ttf") format("truetype");   
+}
+
+@font-face{
+    font-family: "PlayFairBlack";
+    src: url('./fonts/playfair-display-black/PlayfairDisplay-Black.otf') format("opentype");
+}
+
+@font-face{
+    font-family: "IntroRust";
+    src: url("./fonts/intro-rust-g/IntroRustG-Base2Line.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "MinionPro";
+    src: url("./fonts/minion-pro/MinionPro-Regular.otf") format("opentype");
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #root{
+        margin-top: 3vh;
+    }
+
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: 0.1px solid rgba(140,136,132);
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.1vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.3vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.5vw;
+    }
+}
+
+/* Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+
+    #root{
+        margin-top: 4vh;
+    }
+
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: 0.1px solid rgba(140,136,132);
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.2vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.5vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.7vw;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+
+    #root{
+        margin-top: 5vh;
+    }
+
+    .navbar-brand{
+        width: 20vw !important;
+        position: relative;
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.4vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.6vw;
+    }
+
+    .iRFontSize{
+        font-size: 3.9vw;
+    }
+}
+
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
+
+    #root{
+        margin-top: 5vh;
+    }
+
+    .navbar-brand{
+        width: 20vw;
+        position: relative;
+    }
+
+    .element{
+        display: none;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.2vw;
+    }
+
+    .pfFontSizeM{
+        font-size: 1.4vw;
+    }
+} 
+
+/* Extralarge devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    #title, #root{
+        min-height: 100vh;
+    }
+
+    .navbar{
+        padding: 0rem 1rem !important;
+        border-bottom: none;
+        height: 5rem;
+    }
+
+    #navbarSupportedContent{
+        border-bottom: 0.1px solid rgba(140,136,132)
+    }
+
+    .navbar-brand{
+        width: 20vw;
+        position: relative;
+        bottom: -2.5rem;
+    }
+
+    .pfFontSizeS{
+        font-size: 1.3vw;
+    }
+}
+
+body{
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#header{
+    font-family: "Intro";
+}
+
+.greyFont{
+    color: rgba(173,173,173,255);
+}
+
+.activeTab{
+    color: rgba(0,0,0,255);
+    border-bottom: 2px solid rgba(0,0,0,255) !important;
+}
+
+.nav-link{
+    padding: 1.7rem 0;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: rgba(234,185,106,255) !important;
+    border-bottom: 2px solid rgba(234,185,106,255) !important;
+}
+
+.element{
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-top: 2.3rem;
+}
+
+.elementOrange{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: rgba(205,180,123);
+}
+
+.display-grid{
+    display: grid !important;
+}
+
+.playFair{
+    font-family: "PlayFair";
+}
+
+.playFairBlack{
+    font-family: "PlayFairBlack";
+}
+
+.introRust{
+    font-family: "IntroRust";
+}
+
+.minionPro{
+    font-family: "MinionPro";
+}
+
+.highlight{
+    color: rgba(234,185,106,255);
+}
+
+.arrowDown{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 3vw;
+    padding: 0;
+}
+
+.arrowDown > i {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    color: rgba(234,185,106,255);
+    font-size: 2vw;
+}
+
+.smallIcon{
+    height: 2vh;
+    width: 2vw;
+}
